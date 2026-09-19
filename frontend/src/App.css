@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: #111827;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Form */
+
+.form {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input,
+.form select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form input {
+  width: 250px;
+}
+
+.form select {
+  width: 130px;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #2563eb;
+}
+
+/* Buttons */
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Applications */
+
+.applications-title {
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.application {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.application h3 {
+  color: #111827;
+  margin-bottom: 7px;
+}
+
+.application p {
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    width: 100%;
+  }
+}
